@@ -1,28 +1,11 @@
 package main
 
-import "fmt"
-
-type person struct {
-	name string
-	age  int
-}
-
-type human interface {
-	speak()
-}
+import (
+	"daniel/000TestDev/01Dog"
+	"fmt"
+)
 
 func main() {
-	p1 := person{
-		name: "host",
-		age:  12,
-	}
-	saySomething(&p1)
-}
 
-func (p *person) speak() {
-	fmt.Println(p.age, p.name)
-}
-
-func saySomething(h human) {
-	h.speak()
+	fmt.Println(dog.Years(7))
 }
